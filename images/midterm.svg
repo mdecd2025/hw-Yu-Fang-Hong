@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="902.5000610351562" height="215" style="background-color: rgb(241, 241, 241);"><title>思维导图</title><g class="smm-container" transform="matrix(1,0,0,1,-950.999987792969,-386.50000000000017)"><g class="smm-line-container"><path d="M 1089,494L 1151.4,494L 1151.4,494L 1193,494" stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path><path d="M 1271,494L 1303.4,494L 1303.4,416.5Q 1303.4,411.5 1308.4,411.5L 1325,411.5" stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path><path d="M 1271,494L 1303.4,494L 1303.4,494L 1325,494" stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path><path d="M 1502,494L 1534.4,494L 1534.4,471.5Q 1534.4,466.5 1539.4,466.5L 1556,466.5" stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path><path d="M 1271,494L 1303.4,494L 1303.4,571.5Q 1303.4,576.5 1308.4,576.5L 1325,576.5" stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path><path d="M 1502,494L 1534.4,494L 1534.4,516.5Q 1534.4,521.5 1539.4,521.5L 1556,521.5" stroke-dasharray="none" stroke-width="2" stroke="#1e3556" fill="none"></path></g><g class="smm-outer-frame-container"></g><g class="smm-node-container"><g class="smm-node" transform="matrix(1,0,0,1,960,472.5)" style="cursor: default;"><path d="
+      M10,0
+      L117,0
+      C117,0 127,0 127,10
+      L127,31
+      C127,31 127,41 117,41
+      L10,41
+      C10,41 0,41 0,31
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#1e3556" stroke-dasharray="none" stroke-width="2" stroke="#bdc5c9"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="97" data-height="31" data-offsetx="0" opacity="1"><foreignObject width="97" height="31" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><strong style="color: rgb(255, 255, 255);font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;font-size: 24px;">各週進度</strong></p></div><style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style></foreignObject></g></g><rect width="133" height="47" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1193,476)" style="cursor: default;"><path d="
+      M10,0
+      L66,0
+      C66,0 76,0 76,10
+      L76,24
+      C76,24 76,34 66,34
+      L10,34
+      C10,34 0,34 0,24
+      L0,10
+      C0,10 0,0 10,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,1,1)" fill="#a9dada" stroke-dasharray="none" stroke-width="2" stroke="#1e3556"></path><g transform="matrix(1,0,0,1,16,6)"><g data-width="46" data-height="24" data-offsetx="0" opacity="1"><foreignObject width="46" height="24" x="0" y="0"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(255, 255, 255);font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;font-size: 18px;">Tasks</span></p></div></foreignObject></g></g><rect width="82" height="40" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect><rect fill="transparent" width="20" height="36" x="78" y="0"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1325,396)" style="cursor: default;"><path d="
+      M5,0
+      L254,0
+      C254,0 259,0 259,5
+      L259,25
+      C259,25 259,30 254,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="transparent" stroke-dasharray="none" stroke-width="1" stroke="#1e3556"></path><g transform="matrix(1,0,0,1,14.5,5.5)"><g data-width="209" data-height="19" data-offsetx="0" opacity="1"><foreignObject width="209" height="19" x="0" y="0.5"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(30, 53, 86);font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;font-size: 14px;">w1_建立可熙環境，維護個人網站</span></p></div></foreignObject></g><svg width="20" height="20" x="211" y="0"><a xlink:href="https://mdecd2025.github.io/hw-Yu-Fang-Hong/content/w1.html" target="_blank"><rect width="20" height="20" fill="transparent"></rect><svg t="1624174958075" class="icon" viewBox="0 0 1024 1024" p-id="7982" width="20" height="20" fill="#1e3556"><path d="M435.484444 251.733333v68.892445L295.822222 320.682667a168.504889 168.504889 0 0 0-2.844444 336.952889h142.506666v68.892444H295.822222a237.397333 237.397333 0 0 1 0-474.794667h139.662222z m248.945778 0a237.397333 237.397333 0 0 1 0 474.851556H544.654222v-69.006222l139.776 0.056889a168.504889 168.504889 0 0 0 2.844445-336.952889H544.597333V251.676444h139.776z m-25.827555 203.946667a34.474667 34.474667 0 0 1 0 68.892444H321.649778a34.474667 34.474667 0 0 1 0-68.892444h336.952889z" p-id="7983"></path></svg></a></svg></g><rect width="264" height="35" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1325,478.5)" style="cursor: default;"><path d="
+      M5,0
+      L171,0
+      C171,0 176,0 176,5
+      L176,25
+      C176,25 176,30 171,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="transparent" stroke-dasharray="none" stroke-width="1" stroke="#1e3556"></path><rect fill="transparent" width="20" height="31" x="177" y="0"></rect><g transform="matrix(1,0,0,1,14.5,5.5)"><g data-width="126" data-height="19" data-offsetx="0" opacity="1"><foreignObject width="126" height="19" x="0" y="0.5"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(30, 53, 86);font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;font-size: 14px;">task2_SSH推送設定</span></p></div></foreignObject></g><svg width="20" height="20" x="128" y="0"><a xlink:href="https://mdecd2025.github.io/hw-Yu-Fang-Hong/content/task2.html" target="_blank"><rect width="20" height="20" fill="transparent"></rect><svg t="1624174958075" class="icon" viewBox="0 0 1024 1024" p-id="7982" width="20" height="20" fill="#1e3556"><path d="M435.484444 251.733333v68.892445L295.822222 320.682667a168.504889 168.504889 0 0 0-2.844444 336.952889h142.506666v68.892444H295.822222a237.397333 237.397333 0 0 1 0-474.794667h139.662222z m248.945778 0a237.397333 237.397333 0 0 1 0 474.851556H544.654222v-69.006222l139.776 0.056889a168.504889 168.504889 0 0 0 2.844445-336.952889H544.597333V251.676444h139.776z m-25.827555 203.946667a34.474667 34.474667 0 0 1 0 68.892444H321.649778a34.474667 34.474667 0 0 1 0-68.892444h336.952889z" p-id="7983"></path></svg></a></svg></g><rect width="181" height="35" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1556,451)" style="cursor: default;"><path d="
+      M5,0
+      L282,0
+      C282,0 287,0 287,5
+      L287,25
+      C287,25 287,30 282,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="transparent" stroke-dasharray="none" stroke-width="1" stroke="#1e3556"></path><g transform="matrix(1,0,0,1,14.5,5.5)"><g data-width="237" data-height="19" data-offsetx="0" opacity="1"><foreignObject width="237" height="19" x="0" y="0.5"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(30, 53, 86);font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;font-size: 14px;">w3_列出各班目前未納入分組學員名單</span></p></div></foreignObject></g><svg width="20" height="20" x="239" y="0"><a xlink:href="https://mdecd2025.github.io/hw-Yu-Fang-Hong/content/w3.html" target="_blank"><rect width="20" height="20" fill="transparent"></rect><svg t="1624174958075" class="icon" viewBox="0 0 1024 1024" p-id="7982" width="20" height="20" fill="#1e3556"><path d="M435.484444 251.733333v68.892445L295.822222 320.682667a168.504889 168.504889 0 0 0-2.844444 336.952889h142.506666v68.892444H295.822222a237.397333 237.397333 0 0 1 0-474.794667h139.662222z m248.945778 0a237.397333 237.397333 0 0 1 0 474.851556H544.654222v-69.006222l139.776 0.056889a168.504889 168.504889 0 0 0 2.844445-336.952889H544.597333V251.676444h139.776z m-25.827555 203.946667a34.474667 34.474667 0 0 1 0 68.892444H321.649778a34.474667 34.474667 0 0 1 0-68.892444h336.952889z" p-id="7983"></path></svg></a></svg></g><rect width="292" height="35" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1325,561)" style="cursor: default;"><path d="
+      M5,0
+      L408,0
+      C408,0 413,0 413,5
+      L413,25
+      C413,25 413,30 408,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="transparent" stroke-dasharray="none" stroke-width="1" stroke="#1e3556"></path><g transform="matrix(1,0,0,1,14.5,5.5)"><g data-width="363" data-height="19" data-offsetx="0" opacity="1"><foreignObject width="363" height="19" x="0" y="0.5"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(30, 53, 86);font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;font-size: 14px;">task3_使用 Solvespace 繪製及組合平面四連桿系統零組件</span></p></div></foreignObject></g><svg width="20" height="20" x="365" y="0"><a xlink:href="https://mdecd2025.github.io/hw-Yu-Fang-Hong/content/task3.html" target="_blank"><rect width="20" height="20" fill="transparent"></rect><svg t="1624174958075" class="icon" viewBox="0 0 1024 1024" p-id="7982" width="20" height="20" fill="#1e3556"><path d="M435.484444 251.733333v68.892445L295.822222 320.682667a168.504889 168.504889 0 0 0-2.844444 336.952889h142.506666v68.892444H295.822222a237.397333 237.397333 0 0 1 0-474.794667h139.662222z m248.945778 0a237.397333 237.397333 0 0 1 0 474.851556H544.654222v-69.006222l139.776 0.056889a168.504889 168.504889 0 0 0 2.844445-336.952889H544.597333V251.676444h139.776z m-25.827555 203.946667a34.474667 34.474667 0 0 1 0 68.892444H321.649778a34.474667 34.474667 0 0 1 0-68.892444h336.952889z" p-id="7983"></path></svg></a></svg></g><rect width="418" height="35" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g><g class="smm-node" transform="matrix(1,0,0,1,1556,506)" style="cursor: default;" opacity="1"><path d="
+      M5,0
+      L130,0
+      C130,0 135,0 135,5
+      L135,25
+      C135,25 135,30 130,30
+      L5,30
+      C5,30 0,30 0,25
+      L0,5
+      C0,5 0,0 5,0
+      Z
+    " class="smm-node-shape" transform="matrix(1,0,0,1,0.5,0.5)" fill="transparent" stroke-dasharray="none" stroke-width="1" stroke="#1e3556"></path><g transform="matrix(1,0,0,1,14.5,5.5)"><g data-width="85" data-height="19" data-offsetx="0" opacity="1"><foreignObject width="85" height="19" x="0" y="0.5"><div class="smm-richtext-node-wrap" xmlns="http://www.w3.org/1999/xhtml" style="max-width: 500px;"><p><span style="color: rgb(30, 53, 86);font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;font-size: 14px;">w4_設定IPV6</span></p></div></foreignObject></g><svg width="20" height="20" x="87" y="0"><a xlink:href="https://mdecd2025.github.io/hw-Yu-Fang-Hong/content/w4.html" target="_blank"><rect width="20" height="20" fill="transparent"></rect><svg t="1624174958075" class="icon" viewBox="0 0 1024 1024" p-id="7982" width="20" height="20" fill="#1e3556"><path d="M435.484444 251.733333v68.892445L295.822222 320.682667a168.504889 168.504889 0 0 0-2.844444 336.952889h142.506666v68.892444H295.822222a237.397333 237.397333 0 0 1 0-474.794667h139.662222z m248.945778 0a237.397333 237.397333 0 0 1 0 474.851556H544.654222v-69.006222l139.776 0.056889a168.504889 168.504889 0 0 0 2.844445-336.952889H544.597333V251.676444h139.776z m-25.827555 203.946667a34.474667 34.474667 0 0 1 0 68.892444H321.649778a34.474667 34.474667 0 0 1 0-68.892444h336.952889z" p-id="7983"></path></svg></a></svg></g><rect width="140" height="35" x="-2" y="-2" class="smm-hover-node" rx="5" ry="5" fill="none" stroke="#5ec8f8"></rect></g></g><g class="smm-associative-line-container"></g><g class="smm-other-container"></g></g><style>
+  /* 鼠标hover和激活时渲染的矩形 */
+  .smm-hover-node{
+    display: none;
+    opacity: 0.6;
+    stroke-width: 1;
+  }
+
+  .smm-node:not(.smm-node-dragging):hover .smm-hover-node{
+    display: block;
+  }
+
+  .smm-node.active .smm-hover-node, .smm-node-highlight .smm-hover-node{
+    display: block;
+    opacity: 1;
+    stroke-width: 2;
+  }
+
+  .smm-text-node-wrap {
+    user-select: none;
+  }
+
+      .smm-richtext-node-wrap {
+        word-break: break-all;
+        user-select: none;
+      }
+
+      .smm-richtext-node-wrap p {
+        font-family: auto;
+      }
+      </style></svg>
