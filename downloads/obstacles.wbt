@@ -1,0 +1,153 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 1.588417254155308e-18 -0.009999833334166753 0.9999500004166654 3.1415926535897936
+  position 4.356651374258712 0.0971978726565634 0.4992436186450708
+}
+Solid {
+  translation 0.5 0 0
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.01 1 0.1
+      }
+    }
+  ]
+  name "wall1"
+}
+Solid {
+  translation -0.5 0 0
+  children [
+    Shape {
+      geometry Box {
+        size 0.01 1 0.1
+      }
+    }
+  ]
+  name "wall2"
+}
+Solid {
+  translation 0 0.5 0
+  children [
+    Shape {
+      geometry Box {
+        size 1 0.01 0.1
+      }
+    }
+  ]
+  name "wall3"
+}
+Solid {
+  translation 0 -0.5 0
+  children [
+    Shape {
+      geometry Box {
+        size 1 0.01 0.1
+      }
+    }
+  ]
+  name "wall4"
+}
+Solid {
+  translation 0 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.6 0.9 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "Box1"
+}
+Solid {
+  translation -0.2 -0.2 0.1
+  rotation -0.19611613513818404 0 0.9805806756909201 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0 0 0.8
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "Box2"
+}
+Solid {
+  translation -0.2 0.3 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "Box3"
+}
+E-puck {
+  translation -9.571159053296266e-29 0.3 -244393.50067202304
+  rotation 0.9999999471293318 0.0003251789252510641 -4.7329866865760775e-11 1.9221887907668457e-23
+  controller "move robot"
+  controllerArgs [
+    ""
+  ]
+}
+Floor {
+  size 1 1
+}
+Background {
+  skyColor [
+    0 0.12 0.4
+    0 0 0
+    0 0 0
+  ]
+}
+Solid {
+  translation 0.2 0 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.4 0 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry USE BALL_GEOMETRY
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE BALL_GEOMETRY
+}
