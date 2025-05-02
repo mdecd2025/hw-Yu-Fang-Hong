@@ -1,0 +1,132 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6623648729830046 0.3593547755064412 0.6573712196004047 2.476719656776426
+  position 0.021371392835340883 -0.48550702883992597 3.399930808935249
+}
+Solid {
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 1 1 0.01
+      }
+    }
+  ]
+  name "arena"
+}
+Solid {
+  translation 0.5 0 0.5
+  children [
+    Shape {
+      appearance Appearance {
+      }
+      geometry Box {
+        size 0.01 1 1
+      }
+    }
+  ]
+  name "wall1"
+}
+Solid {
+  translation -0.5 0 0.5
+  children [
+    Shape {
+      geometry Box {
+        size 0.01 1 1
+      }
+    }
+  ]
+  name "wall2"
+}
+Solid {
+  translation 0 0.5 0.5
+  children [
+    Shape {
+      geometry Box {
+        size 1 0.01 1
+      }
+    }
+  ]
+  name "wall3"
+}
+Solid {
+  translation 0 -0.5 0.5
+  children [
+    Shape {
+      geometry Box {
+        size 1 0.01 1
+      }
+    }
+  ]
+  name "wall4"
+}
+Solid {
+  translation 0.1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.6 0.9 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "Box1"
+}
+Solid {
+  translation -0.2 -0.2 0.1
+  rotation -0.19611613513818404 0 0.9805806756909201 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0 0 0.8
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "Box2"
+}
+Solid {
+  translation -0.2 0.3 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "Box3"
+}
+E-puck {
+  hidden position_0_0 5.408976260587635e-51
+  hidden position_0_1 5.408976260587635e-51
+  hidden linearVelocity_0 -2.0224720158798788e-41 4.9613621953672824e-29 -2189.5920000002766
+  hidden angularVelocity_0 1.5876359025233077e-25 -8.607922150239278e-40 1.5353760227392365e-39
+  hidden linearVelocity_1 8.25948257491943e-40 -7.442043293050932e-28 -2189.5920000002766
+  hidden angularVelocity_1 1.5876359025233077e-25 -8.607922151034718e-40 1.5353760131172835e-39
+  hidden linearVelocity_2 -2.193107495385243e-40 -7.442043293050932e-28 -2189.5920000002766
+  hidden angularVelocity_2 1.5876359025233077e-25 -8.607922151034718e-40 1.5353760216701306e-39
+  translation -9.571159053296266e-29 0.3 -244393.50067202304
+  rotation 0.9999999471293318 0.0003251789252510641 -4.7329866865760775e-11 1.9221887907668457e-23
+  controller "move robot"
+  controllerArgs [
+    ""
+  ]
+}
