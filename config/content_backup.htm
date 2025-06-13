@@ -101,7 +101,7 @@
 <p>w14 將其餘的 links 補上並擺好位置，之後會補上步驟影片</p>
 <p><img caption="false" height="338" src="/images/螢幕擷取畫面 2025-05-23 145541.png" width="600"/></p>
 <p>剛開始模擬作動時，發生錯誤導致只有紅色連趕在轉動。</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/-4ekeG6W9xQ?si=cO68CpUKXyaxQaqM" title="YouTube video player" width="560"></iframe>後來發現沒有設置物理性質導致其餘連桿無法連動，且當時作動邊界未設置好。</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/-4ekeG6W9xQ?si=cO68CpUKXyaxQaqM" title="YouTube video player" width="560"></iframe> 後來發現沒有設置物理性質導致其餘連桿無法連動，且當時作動邊界未設置好。</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/LPqtmZC4PHs?si=o0qkj6se8DHkzz8Y" title="YouTube video player" width="560"></iframe></p><h2>HW2</h2>
 <p>先利用 solvespace 將四連桿機構畫出來 (第一步影片) ，將其零件組合起來(第二部影片)，接下來再<span>宣告該轉軸所在位置 以及旋轉軸向量即可(第三部影片)。後續會再將影片加上字幕，並完成最後的模擬。</span></p>
 <h4>使用 Solvespace 繪製平面四連桿系統零組件</h4>
@@ -175,7 +175,109 @@
 <p style="padding-left: 30px;"><span>操作者可利用鍵盤特定按鍵控制投籃輪車的移動並發射投籃, 每投出一球後系統透過記分板進行計分, 並由送球機構進行補球或移動輪車取球, 遊戲可進行至全部數量籃球投完為止.</span></p>
 <p>請將期末協同專案執行過程、內容與心得, 製作成影片，配合字幕上傳至 Youtube 後嵌入各階段的期末報告頁面中.</p>
 <p>影片標題: <span style="background-color: #ffff00;">國立虎尾科技大學 - 機械設計工程系 - cd2025 期末報告 - 學員學號 - 各階段影片主題<br/></span></p>
-<h1>Brython</h1>
+<p><span style="color: #999999;">_______________________________________________________________________________________________</span></p>
+<p>根據老師提供的專案進行說明。</p>
+<p>下面這張圖為七段顯示器以及一個矩形競技場。</p>
+<p><span style="color: #000000;"><img alt="" height="425" src="/images/螢幕擷取畫面 2025-06-13 072244.png" width="800"/></span></p>
+<p>此為上面七段顯示器的python程式碼</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">from controller import Supervisor
+
+class SevenSegmentController:
+    def __init__(self, supervisor, color_on, color_off):
+        self.supervisor = supervisor
+
+        # Define the segments for each digit
+        self.digit_segments = [
+            [f"a1", f"b1", f"c1", f"d1", f"e1", f"f1", f"g1"],  # Units
+            [f"a2", f"b2", f"c2", f"d2", f"e2", f"f2", f"g2"],  # Tens
+            [f"a3", f"b3", f"c3", f"d3", f"e3", f"f3", f"g3"]   # Hundreds
+        ]
+
+        # Segment patterns for digits 0-9
+        self.segment_patterns = {
+            0: [1, 1, 1, 1, 1, 1, 0],
+            1: [0, 1, 1, 0, 0, 0, 0],
+            2: [1, 1, 0, 1, 1, 0, 1],
+            3: [1, 1, 1, 1, 0, 0, 1],
+            4: [0, 1, 1, 0, 0, 1, 1],
+            5: [1, 0, 1, 1, 0, 1, 1],
+            6: [1, 0, 1, 1, 1, 1, 1],
+            7: [1, 1, 1, 0, 0, 0, 0],
+            8: [1, 1, 1, 1, 1, 1, 1],
+            9: [1, 1, 1, 1, 0, 1, 1]
+        }
+
+        # Colors for on and off states
+        self.color_on = color_on  # Bright green
+        self.color_off = color_off  # Black
+
+        # Retrieve material nodes for each segment
+        self.segment_nodes = []
+        for digit in self.digit_segments:
+            digit_nodes = []
+            for segment in digit:
+                node = self.supervisor.getFromDef(segment)
+                if node is None:
+                    print(f"Error: Node with DEF name '{segment}' not found!")
+                    exit()
+                digit_nodes.append(node.getField("diffuseColor"))
+            self.segment_nodes.append(digit_nodes)
+
+    def set_digit(self, digit_index, value):
+        """Set the digit at the given index (0 for units, 1 for tens, 2 for hundreds) to the given value (0-9)."""
+        pattern = self.segment_patterns[value]
+        for i, state in enumerate(pattern):
+            color = self.color_on if state else self.color_off
+            self.segment_nodes[digit_index][i].setSFVec3f(color)
+
+    def display_number(self, number):
+        """Display a number (0-999) using the three 7-segment displays."""
+        if not (0 &lt;= number &lt;= 999):
+            print("Error: Number out of range (must be 0-999)")
+            return
+
+        # Break the number into hundreds, tens, and units
+        hundreds = number // 100
+        tens = (number % 100) // 10
+        units = number % 10
+
+        # Update the displays
+        self.set_digit(2, hundreds)
+        self.set_digit(1, tens)
+        self.set_digit(0, units)
+
+
+# Main program
+if __name__ == "__main__":
+    # Create a Supervisor instance
+    supervisor = Supervisor()
+
+    # Define colors
+    color_on = [0.0, 1.0, 0.0]  # Bright green
+    color_off = [0.0, 0.0, 0.0]  # Black
+
+    # Create an instance of the SevenSegmentController
+    controller = SevenSegmentController(supervisor, color_on, color_off)
+
+    # Run the simulation loop
+    timestep = int(supervisor.getBasicTimeStep())
+    while supervisor.step(timestep) != -1:
+        try:
+            # Get user input for the number to display
+            number = 123
+            controller.display_number(number)
+        except ValueError:
+            print("Invalid input. Please enter an integer between 0 and 999.")</pre>
+<p></p>
+<p><span style="background-color: #ffff99;">self.digit_segments</span> 中的 a1 、 b1 、c1 ...； a2 、 b2 、c2 ...； a3 、 b3 、c3 ...，分別為個、十、百位數的 DEF 名稱，共有 7 段所以英文字母到g。</p>
+<p><span style="background-color: #ffff99;">self.segment_patterns</span> 則是定義了數字 <code data-end="385" data-start="380">0~9</code> 每個數字的七段開啟狀態（<code data-end="401" data-start="398">1</code> 表示亮，<code data-end="409" data-start="406">0</code> 表示滅）。</p>
+<p><span style="background-color: #ffff99;">self.color_on</span> 中的 =color_on 為數字顏色明稱 (on 為綠色， off 為黑色)</p>
+<p><span style="background-color: #ffff99;">segment_nodes</span> 中，透過 <code data-end="819" data-start="807">Supervisor</code>，根據 segment 的 <code data-end="838" data-start="833">DEF</code> 名稱（如 <code data-end="850" data-start="844">"a1"</code>），取得對應的 Material 節點，並從這個 Material 節點中，取出 <code data-end="946" data-start="932">diffuseColor</code> 欄位（代表顏色），回傳一個可用來 <code data-end="978" data-start="964">setSFVec3f()</code> 操作的 field 物件。</p>
+<p><span style="background-color: #ffff99;">set_digit()</span> 中，將利用 setSFVec3f() 控制顯示器數值。</p>
+<p><span style="color: #999999;">_________________________________________________________________________________________</span></p>
+<p><img alt="" height="205" src="/images/螢幕擷取畫面 2025-06-13 081845.png" width="304"/></p>
+<p>此為矩形競技場。</p>
+<p><img alt="" height="163" src="/images/螢幕擷取畫面 2025-06-13 082444.png" width="359"/></p><h1>Brython</h1>
 <p><button id="add1to100">1 add to 100</button></p>
 <!-- 導入 brython 程式庫 -->
 <p>
